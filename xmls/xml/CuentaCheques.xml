@@ -1,0 +1,94 @@
+<xml>
+	<modelo>
+		<entidad nombre="CuentaCheques" tabla="CuentaCheques" idToSelect="CuentaCheques_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="CuentaCheques_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="CuentaCheques_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="10" />
+<atributo nombre="CuentaCheques_TipoPersona" campo="TipoPersona" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>FISICA</valor>
+			<valor>GOBIERNO</valor>
+			<valor>MORAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="CuentaCheques_Fideicomitente" campo="Fideicomitente" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="0" hiddeOnResults="1" idrelacionentidad="11" />
+<atributo nombre="CuentaCheques_TipoCuenta" campo="TipoCuenta" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>SPEUA</valor>
+			<valor>CUENTA DE CHEQUES SCOTIABANK</valor>
+    </valores>
+</atributo>
+<atributo nombre="CuentaCheques_TipoPago" campo="TipoPago" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>BANCO A BANCO</valor>
+			<valor>BANCO A TERCEROS FIDEICOMISOS NORMALES</valor>
+			<valor>BANCO A TERCEROS MEXDER</valor>
+			<valor>BANCO A TERCEROS VOSTRO</valor>
+    </valores>
+</atributo>
+<atributo nombre="CuentaCheques_BancoSpei" campo="BancoSpei" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>BANCO DE MEXICO</valor>
+			<valor>BANCO INBURSA S.A.</valor>
+			<valor>BANSI, S.A.</valor>
+			<valor>BANAMEX, S.A.</valor>
+			<valor>HSBC MEXICO S.A.</valor>
+    </valores>
+</atributo>
+<atributo nombre="CuentaCheques_Banco" campo="Banco" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>SCOTIABANK INVERLAT, S.A.</valor>
+    </valores>
+</atributo>
+<atributo nombre="CuentaCheques_DomBanco" campo="DomBanco" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_Moneda" campo="Moneda" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>DLS. U.S.A.</valor>
+			<valor>EUROS</valor>
+			<valor>MONEDA NACIONAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="CuentaCheques_ClaveVostro" campo="ClaveVostro" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CLAVE VOSTRO 1</valor>
+			<valor>CLAVE VOSTRO 2</valor>
+			<valor>CLAVE VOSTRO 3</valor>
+    </valores>
+</atributo>
+<atributo nombre="CuentaCheques_NumCuenta" campo="NumCuenta" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="CuentaCheques_DomBeneficiario" campo="DomBeneficiario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_PlazaInternacional" campo="PlazaInternacional" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_Pais" campo="Pais" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_ClaveSiacInst" campo="ClaveSiacInst" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_ConvenioCieDie" campo="ConvenioCieDie" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_Estatus" campo="Estatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVO</valor>
+			<valor>CANCELADO</valor>
+			<valor>CONSTITUIDO</valor>
+			<valor>ENV. A RESULTADOS</valor>
+			<valor>SUSPENDIDO</valor>
+			<valor>ANTEPROYECTO</valor>
+    </valores>
+</atributo>
+<atributo nombre="CuentaCheques_Clabe" campo="Clabe" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_FechaVence" campo="FechaVence" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_NumAbbasSwift" campo="NumAbbasSwift" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_ConceptoSiac" campo="ConceptoSiac" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_RefCieDie" campo="RefCieDie" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="CuentaCheques_Autorizacion" campo="Autorizacion" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CARGOS</valor>
+			<valor>ABONOS</valor>
+			<valor>AMBOS</valor>
+    </valores>
+</atributo>
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="10" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesClave" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+				<relacion idrelacionentidad="11" nombre="Fideicomitente" idrelacion="Fideicomitente_ID" fieldToDisplay="Fideicomitente_ClaveFideicomitente" tipofieldToDisplay="string"  xmlFile="Fideicomitente.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

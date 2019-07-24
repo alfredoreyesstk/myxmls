@@ -1,0 +1,92 @@
+<xml>
+	<modelo>
+		<entidad nombre="ContratoInversion" tabla="ContratoInversion" idToSelect="ContratoInversion_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="false" >
+			 <atributos>
+			     <atributo nombre="ContratoInversion_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="ContratoInversion_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="7" />
+<atributo nombre="ContratoInversion_TipoContrato" campo="TipoContrato" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CUENTA DE CHEQUES SCOTIABANK</valor>
+			<valor>CUENTA DE CHEQUES SCOTIABANK PATRIMONIAL</valor>
+			<valor>CUENTA DE CHEQUES OTRA INSTITUCION</valor>
+			<valor>INVERSION C/INTERFASE</valor>
+			<valor>INVERSION S/INTERFASE</valor>
+    </valores>
+</atributo>
+<atributo nombre="ContratoInversion_Intermediario" campo="Intermediario" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>BANCO DE MEXICO</valor>
+			<valor>BANCO INBURSA S.A.</valor>
+			<valor>BANSI, S.A.</valor>
+			<valor>BANAMEX, S.A.</valor>
+			<valor>HSBC MEXICO S.A.</valor>
+    </valores>
+</atributo>
+<atributo nombre="ContratoInversion_Moneda" campo="Moneda" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>DLS. U.S.A.</valor>
+			<valor>EUROS</valor>
+			<valor>MONEDA NACIONAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="ContratoInversion_NombreContacto1" campo="NombreContacto1" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="ContratoInversion_NombreContacto2" campo="NombreContacto2" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_ResParamLiq" campo="ResParamLiq" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_EnvioRecursosInv" campo="EnvioRecursosInv" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>FIDEICOMISARIO</valor>
+			<valor>FIDEICOMITENTE</valor>
+			<valor>TERCERO</valor>
+    </valores>
+</atributo>
+<atributo nombre="ContratoInversion_RecRecDesinver" campo="RecRecDesinver" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CUENTA CONCENTRADORA</valor>
+			<valor>CUENTA CONCENTRADORA GENERAL</valor>
+			<valor>CUENTA CONCENTRADORA INDIVIDUAL</valor>
+			<valor>CUENTA PARTICULAR (SCOTIABANK)</valor>
+    </valores>
+</atributo>
+<atributo nombre="ContratoInversion_NoRetenerIsr" campo="NoRetenerIsr" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_Subfiso" campo="Subfiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="8" />
+<atributo nombre="ContratoInversion_FechaVencimiento" campo="FechaVencimiento" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_Estatus" campo="Estatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVO</valor>
+			<valor>CANCELADO</valor>
+			<valor>SUSPENDIDO</valor>
+    </valores>
+</atributo>
+<atributo nombre="ContratoInversion_ContratoIversion" campo="ContratoIversion" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="ContratoInversion_ContratoOtrasInst" campo="ContratoOtrasInst" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="ContratoInversion_Contacto1Lada" campo="Contacto1Lada" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="ContratoInversion_Contacto1Telefono" campo="Contacto1Telefono" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_Contacto1Ext" campo="Contacto1Ext" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_Contacto2Lada" campo="Contacto2Lada" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_Contacto2Telefono" campo="Contacto2Telefono" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_Contacto2Ext" campo="Contacto2Ext" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_Nombre" campo="Nombre" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_Cuenta" campo="Cuenta" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_TraspasoEntreSubFiso" campo="TraspasoEntreSubFiso" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_FechaApertura" campo="FechaApertura" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ContratoInversion_OrigenRecursos" campo="OrigenRecursos" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>APORTACIONES SOLIDARIOS</valor>
+			<valor>CLIENTES MEXDER</valor>
+			<valor>FIDEICOMITENTE A</valor>
+			<valor>GOBIERNO ESTATAL</valor>
+			<valor>GOBIERNO FEDERAL</valor>
+			<valor>GOBIERNO MUNICIPAL</valor>
+			<valor>PARTICULARES</valor>
+			<valor>RECURSOS DEL CONTRATO</valor>
+    </valores>
+</atributo>
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="7" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesClave" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+				<relacion idrelacionentidad="8" nombre="Subfiso" idrelacion="Subfiso_ID" fieldToDisplay="Subfiso_Numero" tipofieldToDisplay="int"  xmlFile="Subfiso.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

@@ -1,0 +1,193 @@
+<xml>
+	<modelo>
+		<entidad nombre="Fideicomiso" tabla="Fideicomiso" idToSelect="Fideicomiso_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="Fideicomiso_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Fideicomiso_AnteproyectoProspecto" campo="AnteproyectoProspecto" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Fideicomiso_AnteproyectoClave" campo="AnteproyectoClave" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Fideicomiso_AnteproyectoAdministrador" campo="AnteproyectoAdministrador" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ADMINISTRADOR 1002</valor>
+			<valor>ADMINISTRADOR 1003</valor>
+			<valor>ADMINISTRADOR 1004</valor>
+			<valor>ADMINISTRADOR 1005</valor>
+			<valor>ADMINISTRADOR 1006</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_AnteproyectoTipoNegocio" campo="AnteproyectoTipoNegocio" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>DEPOSITO MERCANTIL</valor>
+			<valor>F BC PATRIM ESTANDARIZADO</valor>
+			<valor>FIDEICOMISO ESTANDARIZADO</valor>
+			<valor>FIDEICOMISO ESTRUCTURADO</valor>
+			<valor>MANDATO ESTANDATIZADO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_AnteproyectoClasificacion" campo="AnteproyectoClasificacion" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>TODOS</valor>
+			<valor>ADMINISTRACIÓN DELEGADA</valor>
+			<valor>ADMINISTRACIÓN FIDUCIARIA</valor>
+			<valor>ACTIVIDAD EMPRESARIAL</valor>
+			<valor>CONTABILIDAD DELEGADA</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_GeneralesClave" campo="GeneralesClave" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesBancoOrigen" campo="GeneralesBancoOrigen" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>Scotiabank Inverlat, S.A.</valor>
+			<valor>Scotia Inverlat Casa de Bolsa, S.A., de C.V.</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_GeneralesNombre" campo="GeneralesNombre" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesFecha" campo="GeneralesFecha" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesEstatus" campo="GeneralesEstatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVO</valor>
+			<valor>CANCELADO</valor>
+			<valor>CONSTITUIDO</valor>
+			<valor>ENV. A RESULTADOS</valor>
+			<valor>SUSPENDIDO</valor>
+			<valor>ANTEPROYECTO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_GeneralesEjecutivoMonetario" campo="GeneralesEjecutivoMonetario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesAQuienSeCobra" campo="GeneralesAQuienSeCobra" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesCtoEje" campo="GeneralesCtoEje" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesTipoPersona" campo="GeneralesTipoPersona" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>FISICA</valor>
+			<valor>GOBIERNO</valor>
+			<valor>MORAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_GeneralesVersionContrato" campo="GeneralesVersionContrato" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesProceso" campo="GeneralesProceso" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesCliente" campo="GeneralesCliente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesClasificacionProducto" campo="GeneralesClasificacionProducto" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_GeneralesAdeudoHonorarios" campo="GeneralesAdeudoHonorarios" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_Caracteristicas" campo="Caracteristicas" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>DISCRECIONAL RESTRINGIDO</valor>
+			<valor>NO DISCRECIONAL</valor>
+			<valor>SIN MANEJO DE INVERSION</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_CaracteristicasTipoNegocio" campo="CaracteristicasTipoNegocio" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>DEPOSITO MERCANTIL</valor>
+			<valor>F BC PATRIM ESTANDARIZADO</valor>
+			<valor>FIDEICOMISO ESTANDARIZADO</valor>
+			<valor>FIDEICOMISO ESTRUCTURADO</valor>
+			<valor>MANDATO ESTANDATIZADO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_CaracteristicasClasificacionProducto" campo="CaracteristicasClasificacionProducto" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ABIERTOS</valor>
+			<valor>ADMINISTRACION</valor>
+			<valor>DEPOSITO Y/O CUSTODIA</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_CaracteristicasProductoEstandar" campo="CaracteristicasProductoEstandar" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>FIBRAS</valor>
+			<valor>EMPRESARIAL</valor>
+			<valor>PRODUCTO ESTÁNDAR 3</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_CaracteristicasProducto" campo="CaracteristicasProducto" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ADMINISTRACION</valor>
+			<valor>ABIERTOS</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_CaracteristicasValFatca" campo="CaracteristicasValFatca" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>SI</valor>
+			<valor>NO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_CaracteristicasManejoSubFisos" campo="CaracteristicasManejoSubFisos" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasSujetoArt151" campo="CaracteristicasSujetoArt151" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasCerrado" campo="CaracteristicasCerrado" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasRevocable" campo="CaracteristicasRevocable" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasSujetoArt9Lisr" campo="CaracteristicasSujetoArt9Lisr" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasEsContratoEje" campo="CaracteristicasEsContratoEje" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasComiteTecnico" campo="CaracteristicasComiteTecnico" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasOfiBanxico" campo="CaracteristicasOfiBanxico" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasManejaMonExt" campo="CaracteristicasManejaMonExt" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasIvaFronterizo" campo="CaracteristicasIvaFronterizo" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasFechaAlta" campo="CaracteristicasFechaAlta" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasFechaConstitucion" campo="CaracteristicasFechaConstitucion" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasFechaVencimiento" campo="CaracteristicasFechaVencimiento" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CaracteristicasEstado" campo="CaracteristicasEstado" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVO</valor>
+			<valor>CANCELADO</valor>
+			<valor>CONSTITUIDO</valor>
+			<valor>ENV. A RESULTADOS</valor>
+			<valor>SUSPENDIDO</valor>
+			<valor>ANTEPROYECTO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_AdicionalesTipo" campo="AdicionalesTipo" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>PUBLICO</valor>
+			<valor>PRIVADO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_AdicionalesConActividadEmpresarial" campo="AdicionalesConActividadEmpresarial" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesPermisoSre" campo="AdicionalesPermisoSre" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesFechaPermisoSre" campo="AdicionalesFechaPermisoSre" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesProvSustFiduciaria" campo="AdicionalesProvSustFiduciaria" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesFondosInterfaseAfore" campo="AdicionalesFondosInterfaseAfore" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesRenovacionGobDf" campo="AdicionalesRenovacionGobDf" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesRegNalInvExt" campo="AdicionalesRegNalInvExt" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesFechaInscripcion" campo="AdicionalesFechaInscripcion" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesInterfaseSaca" campo="AdicionalesInterfaseSaca" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesTipoContrato" campo="AdicionalesTipoContrato" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CUENTA DE CHEQUES SCOTIABANK</valor>
+			<valor>CUENTA DE CHEQUES SCOTIABANK PATRIMONIAL</valor>
+			<valor>CUENTA DE CHEQUES OTRA INSTITUCION</valor>
+			<valor>INVERSION C/INTERFASE</valor>
+			<valor>INVERSION S/INTERFASE</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_AdicionalesNoEscritura" campo="AdicionalesNoEscritura" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesFechaEscritura" campo="AdicionalesFechaEscritura" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesNombreNotario" campo="AdicionalesNombreNotario" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>NOTARIO 01</valor>
+			<valor>NOTARIO 02</valor>
+			<valor>NOTARIO 03</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomiso_AdicionalesNoNotario" campo="AdicionalesNoNotario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesCiudadNotario" campo="AdicionalesCiudadNotario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesEstadoNotario" campo="AdicionalesEstadoNotario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesPaisNotario" campo="AdicionalesPaisNotario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesFolioRegistroPublico" campo="AdicionalesFolioRegistroPublico" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_AdicionalesFechaInscripcionRegPublico" campo="AdicionalesFechaInscripcionRegPublico" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_DatosBanxicoActividadEconomica" campo="DatosBanxicoActividadEconomica" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_DatosBanxicoFiducuario" campo="DatosBanxicoFiducuario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_DatosBanxicoSectorBancario" campo="DatosBanxicoSectorBancario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_DatosBanxicoLocalidad" campo="DatosBanxicoLocalidad" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_DatosBanxicoCentroResp" campo="DatosBanxicoCentroResp" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_DatosBanxicoNoCr" campo="DatosBanxicoNoCr" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_DatosBanxicoRfcContrato" campo="DatosBanxicoRfcContrato" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_DatosBanxicoNumeroCliente" campo="DatosBanxicoNumeroCliente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomiso_CreditosGarantiasPatrimonio" campo="CreditosGarantiasPatrimonio" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="0" nombre="Fideicomisario" idrelacion="Fideicomisario_ID" fieldToDisplay="Fideicomisario_ClaveFideicomisario" tipofieldToDisplay="string" rol="padre" xmlFile="Fideicomisario.xml" ></relacion>   	
+				<relacion idrelacionentidad="0" nombre="Tercero" idrelacion="Tercero_ID" fieldToDisplay="Tercero_NoTercero" tipofieldToDisplay="int" rol="padre" xmlFile="Tercero.xml" ></relacion>   	
+				<relacion idrelacionentidad="0" nombre="Subfiso" idrelacion="Subfiso_ID" fieldToDisplay="Subfiso_Numero" tipofieldToDisplay="int" rol="padre" xmlFile="Subfiso.xml" ></relacion>   	
+				<relacion idrelacionentidad="0" nombre="ContratoInversion" idrelacion="ContratoInversion_ID" fieldToDisplay="ContratoInversion_ContratoIversion" tipofieldToDisplay="string" rol="padre" xmlFile="ContratoInversion.xml" ></relacion>   	
+				<relacion idrelacionentidad="0" nombre="CuentaCheques" idrelacion="CuentaCheques_ID" fieldToDisplay="CuentaCheques_Clabe" tipofieldToDisplay="string" rol="padre" xmlFile="CuentaCheques.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

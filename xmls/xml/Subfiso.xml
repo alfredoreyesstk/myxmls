@@ -1,0 +1,25 @@
+<xml>
+	<modelo>
+		<entidad nombre="Subfiso" tabla="Subfiso" idToSelect="Subfiso_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="Subfiso_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Subfiso_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="5" />
+<atributo nombre="Subfiso_Numero" campo="Numero" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Subfiso_Nombre" campo="Nombre" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Subfiso_Estatus" campo="Estatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVO</valor>
+			<valor>CANCELADO</valor>
+			<valor>SUSPENDIDO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Subfiso_FechaRegistro" campo="FechaRegistro" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Subfiso_Identificador" campo="Identificador" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="5" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesClave" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

@@ -1,0 +1,26 @@
+<xml>
+	<modelo>
+		<entidad nombre="Kyc" tabla="Kyc" idToSelect="Kyc_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="false" delete="false" >
+			 <atributos>
+			     <atributo nombre="Kyc_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Kyc_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="0" hiddeOnResults="1" idrelacionentidad="9" />
+<atributo nombre="Kyc_Folio" campo="Folio" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Kyc_Nombre" campo="Nombre" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Kyc_NumRegistro" campo="NumRegistro" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Kyc_Oficina" campo="Oficina" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Kyc_ConceptoImpresion" campo="ConceptoImpresion" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ALTA DEL CONTRATO(Promoción Fiduciaria)</valor>
+			<valor>CALL REPORT(Administración Fiducuario)</valor>
+			<valor>CAMBIO DE DATOS ADMINISTRATIVOS(Administración Fiduciaria)</valor>
+    </valores>
+</atributo>
+<atributo nombre="Kyc_CrBanca" campo="CrBanca" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="9" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesClave" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

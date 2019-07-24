@@ -1,0 +1,51 @@
+<xml>
+	<modelo>
+		<entidad nombre="ComiteTecnico" tabla="ComiteTecnico" idToSelect="ComiteTecnico_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="ComiteTecnico_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="ComiteTecnico_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="4" />
+<atributo nombre="ComiteTecnico_Nombre" campo="Nombre" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="ComiteTecnico_Integracion" campo="Integracion" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_Facultades" campo="Facultades" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_Comentarios" campo="Comentarios" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_FechaConstitucion" campo="FechaConstitucion" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="ComiteTecnico_MiembrosQuorum" campo="MiembrosQuorum" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_Estatus" campo="Estatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVO</valor>
+			<valor>CANCELADO</valor>
+			<valor>SUSPENDIDO</valor>
+    </valores>
+</atributo>
+<atributo nombre="ComiteTecnico_NombrePresidentePropietario" campo="NombrePresidentePropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_RfcPresidentePropietario" campo="RfcPresidentePropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NacionalidadPresidentePropietario" campo="NacionalidadPresidentePropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_PepPresidentePropietario" campo="PepPresidentePropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NombrePresidenteSuplente" campo="NombrePresidenteSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_RfcPresidenteSuplente" campo="RfcPresidenteSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NacionalidadPresidenteSuplente" campo="NacionalidadPresidenteSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_PepPresidenteSuplente" campo="PepPresidenteSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NombreSecretarioPropietario" campo="NombreSecretarioPropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_RfcSecretarioPropietario" campo="RfcSecretarioPropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NacionalidadSecretarioPropietario" campo="NacionalidadSecretarioPropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_PepSecretarioPropietario" campo="PepSecretarioPropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NombreSecretarioSuplente" campo="NombreSecretarioSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_RfcSecretarioSuplente" campo="RfcSecretarioSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NacionalidadSecretarioSuplente" campo="NacionalidadSecretarioSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_PepSecretarioSuplente" campo="PepSecretarioSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NombreVocalPropietario" campo="NombreVocalPropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_RfcVocalPropietario" campo="RfcVocalPropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NacionalidadVocalPropietario" campo="NacionalidadVocalPropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_PepVocalPropietario" campo="PepVocalPropietario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NombreVocalSuplente" campo="NombreVocalSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_RfcVocalSuplente" campo="RfcVocalSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_NacionalidadVocalSuplente" campo="NacionalidadVocalSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ComiteTecnico_PepVocalSuplente" campo="PepVocalSuplente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="4" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesClave" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

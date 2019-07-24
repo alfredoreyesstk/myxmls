@@ -1,0 +1,201 @@
+<xml>
+	<modelo>
+		<entidad nombre="Fideicomisario" tabla="Fideicomisario" idToSelect="Fideicomisario_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="Fideicomisario_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Fideicomisario_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="2" />
+<atributo nombre="Fideicomisario_ClaveFideicomisario" campo="ClaveFideicomisario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_TipoPersona" campo="TipoPersona" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>FISICA</valor>
+			<valor>GOBIERNO</valor>
+			<valor>MORAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_RegimenSimplificado" campo="RegimenSimplificado" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_Participante" campo="Participante" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_GeneralesControladorFideicomiso" campo="GeneralesControladorFideicomiso" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>SI</valor>
+			<valor>NO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesNacionalidad" campo="GeneralesNacionalidad" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICANO</valor>
+			<valor>ESTADOUNIDENSE</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesPaisOrigen" campo="GeneralesPaisOrigen" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICO</valor>
+			<valor>ESTADOS UNIDOS</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesActividad" campo="GeneralesActividad" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVIDAD DESCONOCIDA</valor>
+			<valor>AGENTES INMOBILIARIOS</valor>
+			<valor>ARQUITECTO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesAportaRecursos" campo="GeneralesAportaRecursos" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_GeneralesPaisResidencia" campo="GeneralesPaisResidencia" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICO</valor>
+			<valor>ESTADOS UNIDOS</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesClienteScotiaBank" campo="GeneralesClienteScotiaBank" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>SIN ANTIGUEDAD</valor>
+			<valor>MENOS DE UN AÑO</valor>
+			<valor>ENTRE UNO Y TRES</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesPep" campo="GeneralesPep" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_GeneralesEstatus" campo="GeneralesEstatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVO</valor>
+			<valor>CANCELADO</valor>
+			<valor>SUSPENDIDO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesGrupoFilial" campo="GeneralesGrupoFilial" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_GeneralesCalidadMigratoria" campo="GeneralesCalidadMigratoria" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>EXRANJERA</valor>
+			<valor>INDISTINTA</valor>
+			<valor>INMIGRANTE</valor>
+			<valor>INMIGRADO</valor>
+			<valor>NACIONAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesLugarOperacion" campo="GeneralesLugarOperacion" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CUIDAD DE MEXICO</valor>
+			<valor>ESTADO DE MEXICO</valor>
+			<valor>AGUASCALIENTES</valor>
+			<valor>BAJA CALIFORNIA</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesOperaCuentaTerceros" campo="GeneralesOperaCuentaTerceros" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_GeneralesNivelParticipante" campo="GeneralesNivelParticipante" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>A o 1</valor>
+			<valor>B o 2</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_GeneralesClienteRelacionPep" campo="GeneralesClienteRelacionPep" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_GeneralesGrado" campo="GeneralesGrado" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycHonorarios" campo="InfoPldKycHonorarios" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycComisiones" campo="InfoPldKycComisiones" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycOtros" campo="InfoPldKycOtros" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycSueldos" campo="InfoPldKycSueldos" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycVenta" campo="InfoPldKycVenta" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycInversiones" campo="InfoPldKycInversiones" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycArrendamiento" campo="InfoPldKycArrendamiento" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycTipoPatrimonio" campo="InfoPldKycTipoPatrimonio" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycInstrumento" campo="InfoPldKycInstrumento" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>Trans Nac => 100,000 <= 500,000 mn -PF-</valor>
+			<valor>Trans o Inst Mont Unicamente Pago Honorarios PF/PM</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_InfoPldKycRazonApertura" campo="InfoPldKycRazonApertura" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycComentariose" campo="InfoPldKycComentariose" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycNivelRiesgo" campo="InfoPldKycNivelRiesgo" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycEstatusCalculoPld" campo="InfoPldKycEstatusCalculoPld" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_InfoPldKycFechaVerifFircosoft" campo="InfoPldKycFechaVerifFircosoft" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionRfc" campo="IdentificacionRfc" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionCurp" campo="IdentificacionCurp" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionNoSerieEfirma" campo="IdentificacionNoSerieEfirma" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionPaisResidFisc1" campo="IdentificacionPaisResidFisc1" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICO</valor>
+			<valor>ESTADOS UNIDOS</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_IdentificacionPaisResidFisc2" campo="IdentificacionPaisResidFisc2" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICO</valor>
+			<valor>ESTADOS UNIDOS</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_IdentificacionEmail" campo="IdentificacionEmail" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionFechaConstitucion" campo="IdentificacionFechaConstitucion" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionSexo" campo="IdentificacionSexo" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>Masculino</valor>
+			<valor>Femenino</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_IdentificacionCasa" campo="IdentificacionCasa" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICO</valor>
+			<valor>ESTADOS UNIDOS</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_IdentificacionOficina" campo="IdentificacionOficina" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICO</valor>
+			<valor>ESTADOS UNIDOS</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_IdentificacionCelular" campo="IdentificacionCelular" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICO</valor>
+			<valor>ESTADOS UNIDOS</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_IdentificacionFechaInicioRelNeg" campo="IdentificacionFechaInicioRelNeg" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionNoIdentificacion" campo="IdentificacionNoIdentificacion" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionComprobacionDomicilio" campo="IdentificacionComprobacionDomicilio" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionActividadEmpresarial" campo="IdentificacionActividadEmpresarial" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>SI</valor>
+			<valor>NO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_IdentificacionNoIdentFisc1" campo="IdentificacionNoIdentFisc1" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionNoIdentFisc2" campo="IdentificacionNoIdentFisc2" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionClasificacionFacta" campo="IdentificacionClasificacionFacta" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionLadaCasa" campo="IdentificacionLadaCasa" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionLadaOficina" campo="IdentificacionLadaOficina" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionNumeroTelefono" campo="IdentificacionNumeroTelefono" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionNumeroOficina" campo="IdentificacionNumeroOficina" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionNumeroCelular" campo="IdentificacionNumeroCelular" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionExtOficina" campo="IdentificacionExtOficina" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionExtCelular" campo="IdentificacionExtCelular" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionIdentOficialVig" campo="IdentificacionIdentOficialVig" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_IdentificacionVigencia" campo="IdentificacionVigencia" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_EscrituraNoEscritura" campo="EscrituraNoEscritura" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_EscrituraNotario" campo="EscrituraNotario" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>NOTARIO 01</valor>
+			<valor>NOTARIO 02</valor>
+			<valor>NOTARIO 03</valor>
+    </valores>
+</atributo>
+<atributo nombre="Fideicomisario_EscrituraNoNotaria" campo="EscrituraNoNotaria" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_EscrituraCiudad" campo="EscrituraCiudad" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_EscrituraTelefono" campo="EscrituraTelefono" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_EscrituraEmail" campo="EscrituraEmail" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_EscrituraFecha" campo="EscrituraFecha" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_EscrituraEstado" campo="EscrituraEstado" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_CuentasKYCNoCuenta1" campo="CuentasKYCNoCuenta1" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_CuentasKYCTipoCuenta1" campo="CuentasKYCTipoCuenta1" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_CuentasKYCNoCuenta2" campo="CuentasKYCNoCuenta2" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_CuentasKYCTipoCuenta2" campo="CuentasKYCTipoCuenta2" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_CuentasKYCNoCuenta3" campo="CuentasKYCNoCuenta3" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_CuentasKYCTipoCuenta3" campo="CuentasKYCTipoCuenta3" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_CuentasKYCNoCuenta4" campo="CuentasKYCNoCuenta4" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Fideicomisario_CuentasKYCTipoCuenta4" campo="CuentasKYCTipoCuenta4" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="2" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesClave" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

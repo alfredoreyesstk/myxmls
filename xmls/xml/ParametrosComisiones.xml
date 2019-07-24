@@ -1,0 +1,157 @@
+<xml>
+	<modelo>
+		<entidad nombre="ParametrosComisiones" tabla="ParametrosComisiones" idToSelect="ParametrosComisiones_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="ParametrosComisiones_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="ParametrosComisiones_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="6" />
+<atributo nombre="ParametrosComisiones_TipoCalculo" campo="TipoCalculo" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>% Pactado</valor>
+			<valor>% al millar</valor>
+			<valor>Exento</valor>
+			<valor>Importe Fijo</valor>
+			<valor>Importe Fijo + % Pactado</valor>
+			<valor>NO APLICA</valor>
+			<valor>NO AUTOMATIZADO</valor>
+			<valor>Pago Unico</valor>
+			<valor>Tabla de cálculo</valor>
+    </valores>
+</atributo>
+<atributo nombre="ParametrosComisiones_AQuienSeCobra" campo="AQuienSeCobra" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CARGO AL EFECTIVO</valor>
+			<valor>CARGO AL FONDO</valor>
+			<valor>FIDEICOMITENTE</valor>
+			<valor>FIDEICOMISARIO</valor>
+			<valor>TERCERO</valor>
+			<valor>VIA GESTION</valor>
+    </valores>
+</atributo>
+<atributo nombre="ParametrosComisiones_MontoAceptacion" campo="MontoAceptacion" tipo="double" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_ImporteAnualizado" campo="ImporteAnualizado" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_Periodicidad" campo="Periodicidad" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MENSUAL ADENLANTADA</valor>
+			<valor>TRIMESTRAL ADELANTADA</valor>
+			<valor>SEMESTRAL ADELANTADA</valor>
+			<valor>ANUAL ADELANTADA</valor>
+			<valor>MENSUAL VENCIDA</valor>
+			<valor>TRIMESTRAL VENCIDA</valor>
+			<valor>SEMESTRAL VENCIDA</valor>
+			<valor>ANUAL VENCIDA</valor>
+			<valor>CUATRIMESTRAL ADELANTADA</valor>
+			<valor>CUATRIMESTRAL VENCIDA</valor>
+    </valores>
+</atributo>
+<atributo nombre="ParametrosComisiones_CalculoAlDiaPrimero" campo="CalculoAlDiaPrimero" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_Reevaluacion" campo="Reevaluacion" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>INFLACION USA</valor>
+			<valor>REVALUCACION AUTOMATICA x INPC</valor>
+			<valor>REVALUCACION MANUAL</valor>
+			<valor>REVISAR EN CONTRATO (10% CADA 2 AÑOS)</valor>
+			<valor>REVISAR EN CONTRATO (10% CADA 3 AÑOS)</valor>
+			<valor>REVISAR EN CONTRATO (10% CADA 4 AÑOS)</valor>
+			<valor>REVISAR EN CONTRATO (10% CADA 5 AÑOS)</valor>
+			<valor>REVISAR EN CONTRATO (2% ANUAL)</valor>
+			<valor>REVISAR EN CONTRATO (2% CADA 2 AÑOS)</valor>
+			<valor>REVISAR EN CONTRATO (2% CADA 3 AÑOS)</valor>
+			<valor>REVISAR EN CONTRATO (3% ANUAL)</valor>
+			<valor>REVISAR EN CONTRATO (4% ANUAL)</valor>
+    </valores>
+</atributo>
+<atributo nombre="ParametrosComisiones_FechaConstitucion" campo="FechaConstitucion" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_FechaPivote" campo="FechaPivote" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_FechaProxCalculo" campo="FechaProxCalculo" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="ParametrosComisiones_MetodoPago" campo="MetodoPago" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_AQuienFactura" campo="AQuienFactura" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_Nombre" campo="Nombre" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_Comentario" campo="Comentario" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_Estatus" campo="Estatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>A PARTIR DEL 2o. AÑO</valor>
+			<valor>ACTIVO</valor>
+			<valor>ANORMAL</valor>
+			<valor>EN TRAMITE DE EXTINCION</valor>
+			<valor>EXENTO</valor>
+			<valor>RECONOCIM. VIA GESTION</valor>
+			<valor>SUSPENDIDO</valor>
+			<valor>SUSPENDIDO CON INMUEBLES</valor>
+    </valores>
+</atributo>
+<atributo nombre="ParametrosComisiones_PenasConvencionales" campo="PenasConvencionales" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_Interes" campo="Interes" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CPP * 1.5 MENSUAL</valor>
+			<valor>CPP * 2 MENSUAL</valor>
+			<valor>CPP * 3 MENSUAL</valor>
+			<valor>CPP + 10 MENSUAL</valor>
+			<valor>CPP + 10 MENSUAL 1.5%</valor>
+			<valor>CPP + 2 MENSUAL</valor>
+			<valor>CPP MENSUAL</valor>
+			<valor>CPP MENSUAL 1.5%</valor>
+			<valor>CPP MENSUAL 2%</valor>
+			<valor>CPP MENSUAL 3.5%</valor>
+			<valor>INTERES ANUAL 12%</valor>
+			<valor>INTERES ANUAL 2%</valor>
+			<valor>INTERES ANUAL 24%</valor>
+			<valor>INTERES ANUAL 36.98%</valor>
+			<valor>INTERES ANUAL 5.3%</valor>
+			<valor>INTERES ANUAL 7.9%</valor>
+			<valor>INTERES MENSUAL 0.7%</valor>
+			<valor>INTERES MENSUAL 1%</valor>
+			<valor>INTERES MENSUAL 1.5%</valor>
+			<valor>INTERES MENSUAL 2%</valor>
+			<valor>INTERES MENSUAL 3%</valor>
+			<valor>INTERES MENSUAL 3.5%</valor>
+			<valor>INTERES MENSUAL 4%</valor>
+			<valor>INTERES MENSUAL 5%</valor>
+			<valor>INTERES MENSUAL 6%</valor>
+			<valor>INTERES MENSUAL 8%</valor>
+			<valor>INTERES MENSUAL 9%</valor>
+			<valor>LIBOR * 2</valor>
+			<valor>TIIE * 1.5 MENSUAL</valor>
+			<valor>TIIE * 2 MENSUAL</valor>
+			<valor>TIIE * 2.5 MENSUAL</valor>
+			<valor>TIIE * 3 MENSUAL</valor>
+			<valor>TIIE + 1.5 MENSUAL</valor>
+			<valor>TIIE + 2 MENSUAL</valor>
+			<valor>TIIE + 3 MENSUAL</valor>
+			<valor>TIIE + 4 MENSUAL</valor>
+			<valor>TIIE + 6 MENSUAL</valor>
+			<valor>TIIE MENSUAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="ParametrosComisiones_TipoIva" campo="TipoIva" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>IVA AL 0%</valor>
+			<valor>IVA AL 11% (FRONTERIZO)</valor>
+			<valor>IVA AL 16%</valor>
+    </valores>
+</atributo>
+<atributo nombre="ParametrosComisiones_DiaCorte" campo="DiaCorte" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_FechaPrimerCalculo" campo="FechaPrimerCalculo" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_FechaUltimoCalculo" campo="FechaUltimoCalculo" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_CuentaPago" campo="CuentaPago" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_Numero" campo="Numero" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="ParametrosComisiones_SituacionMorosidad" campo="SituacionMorosidad" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>CLIENTE ILOCALIZABLE CON PATRIMONIO</valor>
+			<valor>CLIENTE ILICALIZABLE SIN PATRIMONIO</valor>
+			<valor>CONTRATO SIN EXPEDIENTE</valor>
+			<valor>EN EJECUCION</valor>
+			<valor>EN JUICIO</valor>
+			<valor>EN PROCESO DE EXTINCION</valor>
+			<valor>NEGATIVA DE PAGO</valor>
+			<valor>POR INCATIVIDAD</valor>
+			<valor>NEGATIVA DE PAGO POR FALLECIMIENTO DEL CLIENTE</valor>
+    </valores>
+</atributo>
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="6" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesClave" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

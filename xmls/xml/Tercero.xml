@@ -1,0 +1,63 @@
+<xml>
+	<modelo>
+		<entidad nombre="Tercero" tabla="Tercero" idToSelect="Tercero_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="Tercero_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Tercero_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="3" />
+<atributo nombre="Tercero_NoTercero" campo="NoTercero" tipo="int" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Tercero_RazonSocial" campo="RazonSocial" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Tercero_Nacionalidad" campo="Nacionalidad" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICANO</valor>
+			<valor>ESTADOUNIDENSE</valor>
+    </valores>
+</atributo>
+<atributo nombre="Tercero_ActividadEconomica" campo="ActividadEconomica" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVIDAD DESCONOCIDA</valor>
+			<valor>AGENTES INMOBILIARIOS</valor>
+			<valor>ARQUITECTO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Tercero_LadaCasa" campo="LadaCasa" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_LadaOficina" campo="LadaOficina" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_LadaFax" campo="LadaFax" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_TelefonoCasa" campo="TelefonoCasa" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_TelefonoOficina" campo="TelefonoOficina" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_TelefonoFax" campo="TelefonoFax" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_ExtOficina" campo="ExtOficina" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_ExtFax" campo="ExtFax" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_Estatus" campo="Estatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>ACTIVO</valor>
+			<valor>CANCELADO</valor>
+			<valor>SUSPENDIDO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Tercero_FechaVerFircosoft" campo="FechaVerFircosoft" tipo="DateTime" requerido="1" idunico="0" readonly="0" control="datepicker" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_TipoPersona" campo="TipoPersona" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>FISICA</valor>
+			<valor>GOBIERNO</valor>
+			<valor>MORAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="Tercero_Rfc" campo="Rfc" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Tercero_Correo" campo="Correo" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="1" />
+<atributo nombre="Tercero_CalidaMigratoria" campo="CalidaMigratoria" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="1" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>EXRANJERA</valor>
+			<valor>INDISTINTA</valor>
+			<valor>INMIGRANTE</valor>
+			<valor>INMIGRADO</valor>
+			<valor>NACIONAL</valor>
+    </valores>
+</atributo>
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="3" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesClave" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>
