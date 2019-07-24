@@ -1,0 +1,35 @@
+<xml>
+	<modelo>
+		<entidad nombre="Accionista" tabla="Accionista" idToSelect="Accionista_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="Accionista_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Accionista_AccionistaDe" campo="AccionistaDe" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Accionista_Nombre" campo="Nombre" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Accionista_Rfc" campo="Rfc" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Accionista_PorcentajeParticipacionAccionaria" campo="PorcentajeParticipacionAccionaria" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Accionista_TipoPersona" campo="TipoPersona" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>FISICA</valor>
+			<valor>GOBIERNO</valor>
+			<valor>MORAL</valor>
+    </valores>
+</atributo>
+<atributo nombre="Accionista_Nacionalidad" campo="Nacionalidad" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>MEXICANO</valor>
+			<valor>ESTADOUNIDENSE</valor>
+    </valores>
+</atributo>
+<atributo nombre="Accionista_Pep" campo="Pep" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="0" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>NO</valor>
+			<valor>SI</valor>
+    </valores>
+</atributo>
+			</atributos>
+
+            <relacionesEntidades>
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>
