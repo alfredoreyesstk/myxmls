@@ -1,0 +1,1 @@
+Write-Host "Obtener los xmls de Git"
