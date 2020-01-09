@@ -1,6 +1,6 @@
 Write-Host "Obtener los xmls de Git"
 Write-Host "Cuantos xmls hay?"
-$rutaXML = $(System.DefaultWorkingDirectory)
+$rutaXML = System_DefaultWorkingDirectory
 
 $lista_xml = get-childitem -path $rutaXML  -filter "*.xml"
 
