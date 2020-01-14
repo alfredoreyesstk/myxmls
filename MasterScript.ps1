@@ -52,7 +52,7 @@ sleep 15
 .\4_0_MoveToGit.ps1
 
 #Write-Host "Push a Git"
-.\5_PushToGit.ps1
+#.\5_PushToGit.ps1
 
 #Creamos el archivo de Fin de Proceso para marcar el estatus Terminado en Estatus.txt
 	 Write-Host "Estatus Terminado en Archivo Log"
